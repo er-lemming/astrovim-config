@@ -18,8 +18,8 @@ return {
   },
 
   -- Set colorscheme to use
+  -- default: astrodark
   colorscheme = "astrodark",
-
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
     virtual_text = true,
@@ -69,6 +69,7 @@ return {
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
+    vim.cmd "colorscheme catppuccin"
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {

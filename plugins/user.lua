@@ -1,4 +1,16 @@
 return {
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    flavour = "latte",
+    opts = {
+      styles = {
+        comments = { "italic" },
+        keywords = { "bold" },
+      },
+      -- configuration options...
+    },
+  },
   -- You can also add new plugins here as well:
   -- Add plugins, the lazy syntax
   -- "andweeb/presence.nvim",
